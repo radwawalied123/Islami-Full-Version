@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="eslami">#F8F8F8</color>
+    <color name="primaryColor">#141A2E</color>
+    <color name="btm_selector">#FACC1D</color>
+    <color name="divider_color">#FACC1D</color>
+    <color name="label_color">#F8F8F8</color>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/bg_app"
+    tools:context="Fragments.Quran.QuranFragment">
+
+    <ImageView
+        android:id="@+id/imv_Quran_main"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/quran_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/top_divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/divider_color"
+        app:layout_constraintTop_toTopOf="@id/sura_title"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:fontFamily="@font/elmessiri"
+
+        android:id="@+id/sura_index"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/sura_index"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/sura_title"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imv_Quran_main" />
+
+    <TextView
+        android:fontFamily="@font/elmessiri"
+
+        android:id="@+id/sura_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/sura_name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sura_index"
+        app:layout_constraintTop_toBottomOf="@id/imv_Quran_main" />
+
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/divider_color"
+        app:layout_constraintTop_toBottomOf="@id/sura_title"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/divider_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imv_Quran_main" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sura"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_divider"
+        tools:listitem="@layout/item_sura" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

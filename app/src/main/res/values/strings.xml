@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Islami</string>
+    <string name="eslami">إسلامي</string>
+    <string name="num_ayat">عدد الايات</string>
+    <string name="sura_name">اسم السورة</string>
+    <string name="sura_index">ترتيب السورة</string>
+    <string name="ahadeeth_tv">الاحاديث</string>
+    <string name="radio">إذاعة القرآن الكريم</string>
 </resources>

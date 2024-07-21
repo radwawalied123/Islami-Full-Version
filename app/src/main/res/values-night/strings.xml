@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="eslami">إسلامي</string>
+    <string name="num_ayat">عدد الايات</string>
+    <string name="sura_name">اسم السورة</string>
+    <string name="ahadeeth_tv">الاحاديث</string>
+</resources>
